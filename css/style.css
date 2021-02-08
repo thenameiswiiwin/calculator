@@ -1,3 +1,4 @@
+/* VARIABLES */
 :root {
 	--clr-black: #000000;
 	--clr-white: #ffffff;
@@ -8,7 +9,7 @@
 	--clr-btn-func-hover: #dfb07e;
 	--clr-btn-func-active: #dd8d37;
 }
-
+/* GLOBAL */
 html {
 	box-sizing: border-box;
 }
@@ -21,7 +22,59 @@ body {
 	padding: 0;
 	margin: 0;
 }
-/* Classes */
+/* SCREEN */
+.screen {
+	color: var(--clr-white);
+	text-align: right;
+	font-size: 2.2rem;
+	padding: 1.13rem 0.3rem;
+}
+/* BUTTONS */
+.calc-btns {
+	border: none;
+}
+.calc-btn {
+	flex: 1;
+	font-size: 2.6rem;
+	width: 100%;
+	padding: 1.7rem 1.48rem;
+	margin: 0.08rem;
+	background-color: var(--clr-light-grey);
+}
+.calc-btn:hover {
+	background-color: var(--clr-btn-hover);
+}
+.calc-btn:active {
+	background-color: var(--clr-btn-active);
+}
+.calc-btn:last-child {
+	background-color: var(--clr-btn-func);
+	color: var(--clr-white);
+}
+.calc-btn:hover:last-child {
+	background-color: var(--clr-btn-func-hover);
+}
+.calc-btn:active:last-child {
+	background-color: var(--clr-btn-func-hover);
+}
+/* LAYOUT */
 .container {
 	width: 400px;
+	margin: 10vh auto;
+	background-color: var(--clr-black);
+}
+.calc-row {
+	display: flex;
+	flex-flow: row nowrap;
+}
+.container,
+.screen,
+[class*='calc-'] {
+	border: none;
+}
+.double {
+	flex: 3;
+}
+.triple {
+	flex: 5;
 }
