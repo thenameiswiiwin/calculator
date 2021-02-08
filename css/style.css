@@ -25,7 +25,6 @@ body {
 /* LAYOUT */
 .container {
 	width: 400px;
-	margin: 10vh auto;
 	background-color: var(--clr-black);
 }
 .calc-row {
@@ -46,22 +45,24 @@ body {
 .screen {
 	color: var(--clr-white);
 	text-align: right;
-	font-size: 2.2rem;
+	font-size: 2.5rem;
 	padding: 1.5rem 0.5rem;
 }
 /* BUTTONS */
 .calc-btn {
-	font-size: 2.6rem;
-	width: 100%;
-	padding: 1.7rem 1.48rem;
-	margin: 0.08rem;
-	background-color: var(--clr-light-grey);
+	font-size: 2.5rem;
+	padding: 1.73rem 1.52rem;
+	margin: 0.05rem;
+	cursor: pointer;
 }
 .calc-btn:hover {
 	background-color: var(--clr-btn-hover);
 }
 .calc-btn:active {
 	background-color: var(--clr-btn-active);
+}
+.calc-btn:focus {
+	outline: 0;
 }
 .calc-btn:last-child {
 	background-color: var(--clr-btn-func);
