@@ -1,0 +1,27 @@
+:root {
+	--clr-black: #000000;
+	--clr-white: #ffffff;
+	--clr-light-grey: #d8d9db;
+	--clr-btn-hover: #ebebeb;
+	--clr-btn-active: #bbbcbe;
+	--clr-btn-func: #df974c;
+	--clr-btn-func-hover: #dfb07e;
+	--clr-btn-func-active: #dd8d37;
+}
+
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+/* Classes */
+.container {
+	width: 400px;
+}
