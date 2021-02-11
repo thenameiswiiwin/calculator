@@ -31,6 +31,7 @@ body {
 	display: flex;
 	flex-flow: row nowrap;
 }
+
 [class*='calc-'] {
 	border: none;
 	flex: 1;
