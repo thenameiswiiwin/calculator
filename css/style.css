@@ -21,9 +21,17 @@ html {
 body {
 	padding: 0;
 	margin: 0;
+	line-height: 1.4;
 }
 /* LAYOUT */
 .container {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.calculator {
 	width: 400px;
 	background-color: var(--clr-black);
 }
@@ -47,13 +55,13 @@ body {
 	color: var(--clr-white);
 	text-align: right;
 	font-size: 2.5rem;
-	padding: 1.5rem 0.5rem;
+	padding: 0.7em 0.25em;
 }
 /* BUTTONS */
 .calc-btn {
 	font-size: 2.5rem;
-	padding: 1.73rem 1.52rem;
-	margin: 0.05rem;
+	padding: 0.7em 0.6em;
+	margin: 0.025em;
 	cursor: pointer;
 }
 .calc-btn:hover {
